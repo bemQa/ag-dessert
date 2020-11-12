@@ -2050,6 +2050,7 @@ table td {
     background: url(../img/online-tea-text.png) center no-repeat;
     background-size: contain;
     mix-blend-mode: normal;
+    transform: rotate(2deg);
 }
 
 .steps {
@@ -2654,6 +2655,10 @@ table td {
     .stream-block::before,
     .wrapper-5ka .stream-block::before {
         background-size: cover;
+    }
+
+    .wrapper-5ka .steps-block::after {
+        transform: rotate(0);
     }
 }
 
