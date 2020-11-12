@@ -1989,6 +1989,11 @@ table td {
     text-align: center;
 }
 
+.wrapper-5ka .slogan + .btn-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
 .steps-block {
     position: relative;
     padding: 50px 0 150px;
@@ -2528,6 +2533,10 @@ table td {
     margin: 0 auto 20px;
 }
 
+.wrapper-5ka .main-cookie-h1 {
+    color: #DD1010;
+}
+
 .cookies-block p {
     font-size: 21px;
     line-height: 152%;
@@ -2603,6 +2612,10 @@ table td {
     text-shadow: 7px 7px 0px rgba(180, 113, 43, 0.5);
 }
 
+.wrapper-5ka .error-title {
+    color: #DD1010;
+}
+
 .error-desc {
 	font-weight: bold;
     font-size: 28px;
@@ -2633,9 +2646,13 @@ table td {
 
 @media (max-width: 1366px) {
     .steps-block::before,
+    .wrapper-5ka .steps-block::before,
     .novelties-block::before,
+    .wrapper-5ka .novelties-block::before,
     .prizes-block::before,
-    .stream-block::before {
+    .wrapper-5ka .prizes-block::before,
+    .stream-block::before,
+    .wrapper-5ka .stream-block::before {
         background-size: cover;
     }
 }
