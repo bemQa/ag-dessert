@@ -314,7 +314,8 @@ body .scroll-element .scroll-element_track {
     width: 2px;
 }
 
-body .lk-block .scroll-element .scroll-element_track {
+body .lk-block .scroll-element .scroll-element_track,
+body .winners-table .scroll-element .scroll-element_track {
     background: #fff;
 }
 
@@ -342,7 +343,8 @@ body .scroll-element .scroll-bar {
     position: relative;
 }
 
-body .lk-block .scroll-element .scroll-bar {
+body .lk-block .scroll-element .scroll-bar,
+body .winners-table .scroll-element .scroll-bar {
     background: #fff;
 }
 
@@ -1366,57 +1368,6 @@ span.error {
     color: #ED1B24;
 }
 
-.filters {
-    display: flex;
-    justify-content: space-between;
-    -ms-align-items: center;
-    align-items: center;
-    max-width: 900px;
-    width: 100%;
-    margin: 30px auto 70px;
-}
-
-.date-filter {
-    position: relative;
-    max-width: 110px;
-    width: 100%;
-    padding-left: 30px;
-}
-
-.phone-filter {
-    max-width: 400px;
-    margin: 0;
-}
-
-.filters .phone-filter input:not([type="checkbox"]) {
-    border: 2px solid #009ED7;
-    transform: skewX(-10deg);
-}
-
-.search {
-    position: absolute;
-    top: 0;
-    right: 16px;
-    bottom: 0;
-    width: 17px;
-    height: 17px;
-    margin: auto;
-    background: url(../img/search.svg) center no-repeat;
-    background-size: contain;
-    transition: all .2s linear;
-}
-
-.search:hover {
-    transform: scale(1.2);
-}
-
-.table-wrapper {
-    max-width: 900px;
-    width: 100%;
-    height: 320px;
-    margin: 0 auto 50px;
-}
-
 table {
   width: 100%;
   border-spacing: 0;
@@ -1495,12 +1446,12 @@ table td {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: -945px;
     bottom: 0;
     margin: auto;
-    width: 100%;
+    width: 693px;
     height: 100%;
-    background: url(../img/glukoza.png) 90% 200px no-repeat;
+    background: url(../img/glukoza.png) center 200px no-repeat;
     background-size: 693px;
 }
 
@@ -2657,12 +2608,12 @@ table td {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: -870px;
     bottom: 0;
     margin: auto;
-    width: 100%;
+    width: 540px;
     height: 100%;
-    background: url(../img/glukoza.png) 83% 200px no-repeat;
+    background: url(../img/glukoza.png) center 200px no-repeat;
     background-size: 540px;
     z-index: 1;
 }
@@ -2673,6 +2624,164 @@ table td {
 
 .stream-lk-block .stream-wrapper {
     max-width: 100%;
+}
+
+.lk-prize {
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.lk-prize .prize-name {
+    color: #fff;
+}
+
+.winners-container {
+    max-width: 870px;
+    width: 100%;
+    margin: 40px 0 60px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.phone-filter {
+    max-width: 400px;
+    margin: 0;
+}
+
+.phone-filter input:not([type="checkbox"]) {
+    height: 55px;
+    font-weight: normal;
+    font-size: 18px;
+    padding-left: 24px;
+    border: 2px solid rgba(59, 44, 114, 0.3);
+    border-radius: 30px;
+}
+
+.phone-filter input:not([type="checkbox"]):focus {
+    border: 2px solid #3B2C72;
+}
+
+.phone-filter input.error:not([type="checkbox"]) {
+    color: #FF4B4D;
+    border: 2px solid #FF4B4D;
+}
+
+.search {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    width: 17px;
+    height: 17px;
+    margin: auto;
+    background: url(../img/search.svg) center no-repeat;
+    background-size: contain;
+}
+
+.winners {
+    max-width: 870px;
+    width: 100%;
+    margin: auto;
+    padding: 30px 40px 30px;
+    background: #005826;
+    border-radius: 30px;
+}
+
+.table-wrapper {
+    max-width: 870px;
+    width: 100%;
+    max-height: 340px;
+    margin: auto;
+}
+
+.table-wrapper.scroll-content {
+    padding-right: 18px;
+}
+
+.winners-table {
+    margin-bottom: 40px;
+}
+
+.winners-table table th {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #fff;
+    text-align: left;
+    padding: 0 20px 10px 0;
+}
+
+.winners-table table tbody {
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 1;
+    color: #fff;
+    text-align: left;
+}
+
+.winners-table table td {
+    padding: 10px 20px 10px 0;
+    min-width: 190px;
+    color: #fff
+}
+
+.winners-table table td:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 230px;
+}
+
+.winners-table table td:nth-child(3) {
+   min-width: 140px;
+}
+
+.prize-td {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.winners-prize {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 42px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.winners-prize img {
+    max-width: 60px;
+}
+
+.winners-prize-info {
+    max-width: 180px;
+    width: 100%;
+}
+
+.winners-prize-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.winners-prize-text {
+    font-size: 18px;
+    line-height: 1;
+    color: #FDF48D;
 }
 
 @media (max-width: 1366px) {
@@ -2733,6 +2842,15 @@ table td {
     .wrapper-5ka .menu::after {
         right: -75px;
         height: 150px;
+    }
+
+    .lk-table-wrapper:nth-child(1) {
+        max-width: 520px;
+    }
+
+    .lk-table-wrapper:nth-child(2) {
+        max-width: 400px;
+        margin: 0 auto;
     }
 }
 
@@ -2962,14 +3080,9 @@ table td {
 
     .filters {
         flex-direction: column;
-        -ms-align-items: flex-start;
-        align-items: flex-start;
+        -ms-align-items: center;
+        align-items: center;
         margin: 30px auto 40px;
-    }
-
-    .phone-filter {
-        order: -1;
-        margin-bottom: 20px !important;
     }
 
     .winner-info {
@@ -2991,7 +3104,7 @@ table td {
     }
 
     .winners-block {
-        min-height: 700px;
+        min-height: 1050px;
         background: url(../img/bg-winners-mob.png) center no-repeat;
         background-size: 452px;
     }
@@ -3001,6 +3114,8 @@ table td {
     }
 
     .winners-block::before {
+        right: 0;
+        width: 266px;
         background: url(../img/glukoza.png) center bottom no-repeat;
         background-size: 266px;
     }
@@ -3560,6 +3675,85 @@ table td {
         max-width: 332px;
         width: 100%;
         height: 189px;
+    }
+
+    .lk-table-wrapper:nth-child(2) {
+        margin: 50px auto;
+    }
+
+    .winners-container {
+        margin-bottom: 0;
+    }
+
+    .phone-filter {
+        max-width: 300px;
+    }
+
+    .phone-filter input:not([type="checkbox"]) {
+        font-size: 16px;
+    }
+
+    .winners {
+        position: relative;
+        padding: 20px 10px 30px;
+        margin-bottom: 50px;
+    }
+
+    .winners::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -500px;
+        right: -500px;
+        bottom: 0;
+        width: 1000px;
+        height: 100%;
+        margin: auto;
+        background: #005826;
+    }
+
+    .winners-table {
+        margin-bottom: 30px;
+    }
+
+    .winners-table table th {
+        font-weight: 300;
+    }
+
+    .winners-table table th,
+    .winners-table table td {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .winners-table table td {
+        min-width: auto;
+        vertical-align: bottom;
+    }
+
+    .winners-table table .mobile-visible,
+    .prize-td {
+        display: table-cell;
+    }
+
+    .winners-prize {
+        margin: 0 auto 5px;
+    }
+
+    .winners-name {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 170px;
+    }
+
+    .winners-prize-title,
+    .winners-prize-text {
+        font-size: 14px;
     }
 }
 
