@@ -2640,6 +2640,41 @@ table td {
     width: 573px;
 }
 
+.stream-lk-block {
+    margin-top: 100px;
+    min-height: 720px;
+    padding-bottom: 0;
+}
+
+.stream-lk-block::before {
+    top: -115px;
+    min-height: 866px;
+    background: url(../img/bg-lk1.png) center no-repeat;
+    background-size: 100% 100%;
+}
+
+.stream-lk-block .glukoza {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: url(../img/glukoza.png) 83% 200px no-repeat;
+    background-size: 540px;
+    z-index: 1;
+}
+
+.stream-lk-block .container {
+    z-index: 1;
+}
+
+.stream-lk-block .stream-wrapper {
+    max-width: 100%;
+}
+
 @media (max-width: 1366px) {
     .steps-block::before,
     .wrapper-5ka .steps-block::before,
@@ -3509,6 +3544,22 @@ table td {
         top: 25px;
         background: url(../img/5ka-tree.png) center 0px no-repeat, url(../img/5ka-header-bg-mob.png) center no-repeat;
         background-size: contain;
+    }
+
+    .stream-lk-block {
+        min-height: auto;
+        margin-top: 50px;
+    }
+
+    .stream-block::before {
+        top: -25px;
+        min-height: 620px;
+    }
+
+    .stream-wrapper iframe {
+        max-width: 332px;
+        width: 100%;
+        height: 189px;
     }
 }
 
